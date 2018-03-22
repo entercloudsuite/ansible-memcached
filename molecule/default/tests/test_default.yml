@@ -1,0 +1,24 @@
+---
+package:
+  memecached:
+    installed: true
+port:
+  tcp:11211:
+    listening: true
+    ip:
+      - 0.0.0.0
+service:
+  memecached:
+    enabled: true
+    running: true
+user:
+  memecached:
+    exists: true
+    groups:
+      - memecached
+group:
+  memecached:
+    exists: true
+process:
+  memecached:
+    running: true
