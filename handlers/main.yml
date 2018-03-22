@@ -4,7 +4,7 @@
 - name: restart memcache
   service: name=memcache state=restarted
 - name: stop memcache
-  service: name=memcached state=stopped
+  service: name=memcache state=stopped
 - name: enabled memcache
-  service: name=memcached enabled=yes
+  service: name=memcache enabled=yes
 
