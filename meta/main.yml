@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Attilio Greco
-  description: Playbook for memecached.
+  description: Playbook for memcached.
   company: Enter srl
   license: MIT
   min_ansible_version: 2.4

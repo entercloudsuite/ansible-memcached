@@ -1,2 +1,6 @@
 ---
 # defaults vars
+memcache_port: 11211
+memcache_listen_ip: 0.0.0.0
+memcache_log_file: "/var/log/memcached"
+memcached_memory: 256

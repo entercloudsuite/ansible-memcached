@@ -3,4 +3,4 @@
 - name: run the main role
   hosts: all
   roles:
-    - {role: ansible-memecached}
+    - {role: ansible-memcached}

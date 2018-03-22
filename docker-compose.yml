@@ -4,6 +4,6 @@ services:
   molecule:
     image: fminzoni/molecule
     volumes:
-      - .:/root/src/ansible-memecached
+      - .:/root/src/ansible-memcached
       - /var/run/docker.sock:/var/run/docker.sock
-    working_dir: /root/src/ansible-memecached
+    working_dir: /root/src/ansible-memcached

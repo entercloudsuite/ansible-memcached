@@ -1,10 +1,10 @@
-Ansible Role: memecached 
+Ansible Role: memcached 
 ======================================
 
-[![Build Status](https://travis-ci.org/entercloudsuite/ansible-memecached.svg?branch=master)](https://travis-ci.org/entercloudsuite/ansible-memecached)
-[![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.memecached-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/memecached)  
+[![Build Status](https://travis-ci.org/entercloudsuite/ansible-memcached.svg?branch=master)](https://travis-ci.org/entercloudsuite/ansible-memcached)
+[![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.memcached-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/memcached)  
 
-Installs memecached on Ubuntu 16.04 (Xenial)
+Installs memcached on Ubuntu 16.04 (Xenial)
 
 ## Requirements
 
@@ -20,7 +20,7 @@ Run with default vars:
 
     - hosts: all
       roles:
-        - { role: ansible-memecached }
+        - { role: ansible-memcached }
 
 ## Testing
 
@@ -40,7 +40,7 @@ Destroy the Docker container with the command `molecule destroy`.
 
 To run all the steps with just one command, run `molecule test`. 
 
-In order to run the role targeting a VM, use the playbook_deploy.yml file for example with the following command: `ansible-playbook ansible-memecached/molecule/default/playbook_deploy.yml -i VM_IP_OR_FQDN, -u ubuntu --private-key private.pem`.  
+In order to run the role targeting a VM, use the playbook_deploy.yml file for example with the following command: `ansible-playbook ansible-memcached/molecule/default/playbook_deploy.yml -i VM_IP_OR_FQDN, -u ubuntu --private-key private.pem`.  
 
 ## License
 
