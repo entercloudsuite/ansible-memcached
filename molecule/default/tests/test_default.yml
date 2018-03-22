@@ -1,24 +1,21 @@
 ---
 package:
-  memecached:
+  memcached:
     installed: true
 port:
   tcp:11211:
     listening: true
-    ip:
-      - 0.0.0.0
 service:
-  memecached:
+  memcached:
     enabled: true
     running: true
 user:
-  memecached:
+  memcache:
     exists: true
     groups:
-      - memecached
+    - memcache
+    home: /nonexistent
+    shell: /bin/false
 group:
-  memecached:
+  memcache:
     exists: true
-process:
-  memecached:
-    running: true
