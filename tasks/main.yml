@@ -3,11 +3,12 @@
 - name: Install memcached
   apt: name=memcached state=present
   notify:
-    - enabled memcache
+    - enabled memcached
 
 - name: Copy conf to the machine
   template:
     src: templates/memcached.conf.j2
     dest: /etc/memcached.conf
   notify:
-   - restart memcache
+   - restart memcached
+   - enabled memcached

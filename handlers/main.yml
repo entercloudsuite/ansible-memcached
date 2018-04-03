@@ -1,10 +1,13 @@
 ---
-- name: start memcache
-  service: name=memcache state=started
-- name: restart memcache
-  service: name=memcache state=restarted
-- name: stop memcache
-  service: name=memcache state=stopped
-- name: enabled memcache
-  service: name=memcache enabled=yes
+- name: start memcached
+  service: name=memcached state=started
+
+- name: restart memcached
+  service: name=memcached state=restarted
+
+- name: stop memcached
+  service: name=memcached state=stopped
+
+- name: enabled memcached
+  service: name=memcached enabled=yes
 
