@@ -1,6 +1,9 @@
 ---
-# defaults vars
+# Defaults variables
+
 memcache_port: 11211
-memcache_listen_ip: 0.0.0.0
-memcache_log_file: "/var/log/memcached"
-memcache_memory: 256
+memcache_bind_ip: 127.0.0.1
+memcache_log_file: /var/log/memcached.log
+memcache_memory: 64
+memcache_user: memcache
+memcache_debug: false
