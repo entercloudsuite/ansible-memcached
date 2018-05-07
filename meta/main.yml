@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: Attilio Greco
+  author: Enter
   description: Playbook for memcached.
   company: Enter srl
   license: MIT
@@ -9,12 +9,7 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - xenial
+        - trusty
   galaxy_tags:
     - molecule
-
-
-dependencies: []
-  # List your role dependencies here, one per line.
-  # Be sure to remove the '[]' above if you add dependencies
-  # to this list.
-
+    - memcached
