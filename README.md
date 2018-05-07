@@ -15,6 +15,7 @@ This role requires Ansible 2.4 or higher.
 The role defines its variables in `defaults/main.yml`:
 
 |Name|Description|Default Value|
+|----|-----------|-------------|
 |memcache_bind_ip|Memcached network bind ip|127.0.0.1|
 |memcache_port|Memcached network port|11211|
 |memcache_log_file|Memcached log file path|/var/log/memcached.log|
