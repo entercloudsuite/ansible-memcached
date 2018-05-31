@@ -25,12 +25,24 @@ The role defines its variables in `defaults/main.yml`:
 
 ## Example Playbook
 
-Run with default vars:
-
+### Run with default vars:
+``` yaml
     - hosts: all
       roles:
         - { role: ansible-memcached }
 
+```
+
+### Production Example
+
+```yaml
+    - hosts: all
+      roles:
+        - role: ansible-memcached
+          memcache_bind_ip: 0.0.0.0
+          memcache_memory: 2048
+
+``` 
 ## Testing
 
 Tests are performed using [Molecule](http://molecule.readthedocs.org/en/latest/).
