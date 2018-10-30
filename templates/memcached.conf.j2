@@ -33,9 +33,5 @@ logfile {{ memcache_log_file }}
 # Limit the number of simultaneous incoming connections. The daemon default is 1024
 -c {{ memcache_connections }} #1024
 
-
-# Return error when memory is exhausted (rather than removing items)
--M
-
 # Maximize core file limit
 -r
