@@ -1,5 +1,4 @@
 ---
-
 - name: Install memcached
   apt: 
     name: memcached
@@ -13,3 +12,15 @@
     dest: /etc/memcached.conf
   notify:
    - restart memcached
+
+- name: create systemd directory for override memcached value
+  file:
+    state: directory
+    path: /etc/systemd/system/memcached.service.d
+
+- name: increase number of openfiles and process limits
+  copy:
+    src: systemd_override.conf
+    dest: /etc/systemd/system/memcached.service.d/override.conf
+  notify:
+    - restart memcached
