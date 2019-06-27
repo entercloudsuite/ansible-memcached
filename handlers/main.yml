@@ -9,3 +9,9 @@
   service: 
     name: memcached
     enabled: yes
+
+- name: start memcached
+  service: 
+    name: memcached
+    daemon_reload: yes
+    enabled: yes
