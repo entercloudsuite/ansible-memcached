@@ -23,4 +23,4 @@
     src: systemd_override.conf
     dest: /etc/systemd/system/memcached.service.d/override.conf
   notify:
-    - restart memcached
+    - start memcached
